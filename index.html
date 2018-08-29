@@ -1,0 +1,23 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no"><meta name="theme-color" content="#000000"><link rel="manifest" href="/react-drupal-test/manifest.json"><link rel="shortcut icon" href="/react-drupal-test/favicon.ico"><script>class HelloWorld extends HTMLElement {
+      constructor(name) {
+        super();
+    
+        this.subject = name || 'World';
+    
+            // create a Shadow DOM
+        this.root = this.attachShadow({ mode: 'open' });
+        this.attachShadow = this.connectedCallback();
+      }
+    
+        // run some code when the component is ready
+      connectedCallback() {
+        this.root.innerHTML = this.getTemplate();
+      }
+    
+      // create templates that interpolate variables and HTML!
+      getTemplate() {
+        return `<h1>Hello !</h1>`;
+      }
+    }
+    
+    customElements.define('hello-world', HelloWorld);</script><title>React App</title><link href="/react-drupal-test/static/css/main.c17080f1.css" rel="stylesheet"></head><body><noscript>You need to enable JavaScript to run this app.</noscript><hello-world></hello-world><div id="root"></div><script type="text/javascript" src="/react-drupal-test/static/js/main.97f1b0c8.js"></script></body></html>
