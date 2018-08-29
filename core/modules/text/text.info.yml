@@ -1,0 +1,14 @@
+name: Text
+type: module
+description: 'Defines simple text field types.'
+package: Field types
+version: VERSION
+core: 8.x
+dependencies:
+  - field
+  - filter
+
+# Information added by drush on 2018-08-01
+version: '8.5.6'
+project: 'drupal'
+datestamp: 1533156642
